@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap");
+:root {
+  --primary: #6c757d;
+  --secondary: #929292;
+  --bg-body: #363636;
+  --input-color: #c0c0c0;
+  --input-background: #4b5257;
+  --danger: rgb(160, 8, 8);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  color: white;
+  background: var(--bg-body);
+  font-family: "Nunito", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+h4 {
+  color: white;
+}
+.row {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form-group {
+  margin-bottom: 10px;
+}
+.form-control {
+  width: 100%;
+  padding: 12px 10px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: #3b3b3b;
+}
+.form-control:focus {
+  box-shadow: 0 0 0 0.2rem #6c757ded;
+}
+.form-group label {
+  color: white;
+  margin-bottom: 8px;
+  display: inline-block;
+}
+
+.card {
+  background: var(--secondary);
+  max-width: 90%;
+  margin: 0 auto;
+  width: 570px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
+.card-header {
+  background: var(--primary);
+  padding: 15px 30px;
+  color: white;
+}
+.card-body {
+  padding: 25px 30px;
+}
+
+.errors {
+  background: var(--danger);
+  color: white;
+  border-radius: 5px;
+  padding: 15px 20px;
+  margin-bottom: 15px;
+}
+.error {
+  color: var(--danger);
+}
+/* User List & Chat Header */
+.user-profile {
+  background: var(--secondary);
+  padding: 15px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.user-info {
+  display: flex;
+  align-items: center;
+}
+.user-img {
+  margin-right: 10px;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--primary);
+  border-radius: 50%;
+  font-size: 30px;
+  color: white;
+}
+.status {
+  color: rgb(214, 214, 214);
+}
